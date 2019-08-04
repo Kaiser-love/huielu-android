@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <me.shouheng.commons.widget.recycler.EmptyView
+            android:id="@+id/iv_empty"
+            app:empty_image="@drawable/ic_folder_black_24dp"
+            app:title="@string/setting_backup_onedrive_no_more_folders"
+            app:tint_drawable="true"
+            app:default_state_loading="false"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <me.shouheng.commons.widget.recycler.EmptySupportRecyclerView
+            android:id="@+id/rv_directories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <me.shouheng.commons.widget.theme.SupportLoading
+            android:id="@+id/sl"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+</layout>

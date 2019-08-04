@@ -1,0 +1,44 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${project.kotlinVersion}"
+        classpath 'io.fabric.tools:gradle:1.26.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        classpath 'com.tencent.mm:AndResGuard-gradle-plugin:1.2.15'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.google.com/" }
+        maven { url "https://dl.bintray.com/easymark/Android" }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+    }
+}
+
+ext {
+    compileSdkVersion = 28
+    buildToolsVersion = '28.0.3'
+    targetSdkVersion = compileSdkVersion
+    minSdkVersion = 21
+
+    supportLibVersion = '28.0.0'
+    archVersion = '1.1.1'
+
+    rxJava = '2.2.0'
+    rxAndroid = '2.0.2'
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

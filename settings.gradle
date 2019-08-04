@@ -1,0 +1,1 @@
+include ':app', ':commons', ':data', ':pinlockview', ':fingerprint',':photoview',':camera',":library"

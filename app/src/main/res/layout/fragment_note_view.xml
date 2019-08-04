@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <me.shouheng.easymark.EasyMarkViewer
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/emv" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab"
+                app:fab_size="normal"
+                app:fab_colorRipple="#99FFFFFF"
+                app:fab_colorNormal="?colorAccent"
+                app:fab_colorPressed="?colorAccent"
+                app:fab_shadowRadius="5dp"
+                app:fab_shadowXOffset="1.5dp"
+                app:fab_shadowYOffset="1.5dp"
+                android:src="@drawable/ic_edit_white_24dp"
+                android:layout_margin="16dp"
+                android:layout_gravity="end|bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_gravity="start"
+            android:layout_width="300dp"
+            android:layout_height="match_parent">
+
+            <include android:id="@+id/drawer" layout="@layout/layout_note_view_drawer" />
+
+        </FrameLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</layout>

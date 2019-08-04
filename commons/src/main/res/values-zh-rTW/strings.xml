@@ -1,0 +1,417 @@
+<resources>
+    <string name="mark_note">馬克筆記</string>
+    <string name="language_code">zh</string>
+
+    <!-- commons -->
+    <string name="text_about">關於</string>
+    <string name="text_custom">自定義</string>
+    <string name="text_add">添加</string>
+    <string name="text_delete">删除</string>
+    <string name="text_confirm">確認</string>
+    <string name="text_edit">編輯</string>
+    <string name="text_pick">選擇</string>
+    <string name="text_preview">預覽</string>
+    <string name="text_ok">OK</string>
+    <string name="text_done">完成</string>
+    <string name="text_save">保存</string>
+    <string name="text_presets">預定義</string>
+    <string name="text_reset">重置</string>
+    <string name="text_send">發送</string>
+    <string name="text_share">分享</string>
+    <string name="text_search">蒐索</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_close">關閉</string>
+    <string name="text_back">返回</string>
+    <string name="text_give_up">放弃</string>
+    <string name="text_created">創建</string>
+    <string name="text_updated">更新</string>
+    <string name="text_retry">重試</string>
+    <string name="text_next">下一個</string>
+    <string name="text_last">上一個</string>
+    <string name="text_more">更多</string>
+    <string name="text_tips">提示</string>
+    <string name="text_warning">警告</string>
+    <string name="text_send_to">發送到&#8230;</string>
+    <string name="items">條目</string>
+    <string name="text_trash">放進垃圾箱</string>
+    <string name="text_archive">歸檔</string>
+    <string name="text_move_out">移出</string>
+    <string name="text_tab_again_exit">再按一次退出</string>
+    <string name="text_attachment">附件</string>
+    <string name="working">正在執行&#8230;</string>
+    <string name="text_search_with">按條件蒐索&#8230;</string>
+    <string name="text_rate_app">評估APP</string>
+    <string name="text_menu">選單</string>
+    <string name="text_backup">備份</string>
+    <string name="text_redo">重做</string>
+    <string name="text_undo">撤銷</string>
+    <string name="text_title">標題</string>
+    <string name="text_chars">字數</string>
+    <string name="text_succeed">成功了!</string>
+    <string name="text_failed">失敗了!</string>
+    <string name="text_failed_to_save_file">保存檔案失敗</string>
+    <string name="text_failed_to_resolve_intent">沒有找到可用的應用</string>
+    <string name="text_file_not_exist">沒有找到檔案</string>
+    <string name="text_save_or_discard">保存還是丟棄所做的更改？</string>
+    <string name="text_save_successfully">保存成功</string>
+    <string name="offline_your_device_is_offline">設備無網絡</string>
+    <string name="offline_check_wifi_state_hint">檢查你的Wi-Fi或者移動數據連接\n並再次嘗試</string>
+
+    <!-- app commons -->
+    <string name="text_add_shortcut">添加快捷方式</string>
+    <string name="text_note_not_found">沒有找到這個筆記</string>
+    <string name="text_notebook_not_found">沒有找到筆記本</string>
+    <string name="text_failed_to_read_note_file">讀取筆記檔案失敗</string>
+    <string name="text_failed_to_save_note">筆記保存失敗</string>
+    <string name="text_copy_content">複製內容</string>
+    <string name="text_copy_title">複製標題</string>
+    <string name="text_file_saved_to">檔案被保存到%s</string>
+    <string name="text_share_image">分享圖片</string>
+    <string name="text_share_text">分享文字</string>
+    <string name="text_share_html">分享Html</string>
+    <string name="text_title_required">需要輸入標題</string>
+    <string name="text_export_html">匯出Html</string>
+    <string name="text_failed_to_modify_data">數據修改失敗</string>
+    <string name="text_input_password">輸入密碼</string>
+    <string name="text_open_in_browser">在瀏覽器中打開</string>
+    <string name="text_copy_link">複製連結</string>
+    <string name="text_find_in_page">在頁面中蒐索</string>
+    <string name="text_print_pdf">列印PDF</string>
+    <string name="text_empty_list">清單為空</string>
+    <string name="text_capture">截圖</string>
+    <string name="text_capturing">正在截圖&#8230;</string>
+    <string name="text_default_note_name">未命名筆記</string>
+    <string name="text_storage_unavailable">存儲空間不可用</string>
+    <string name="text_failed_to_save_attachment">附件保存失敗</string>
+    <plurals name="text_notes_number">
+        <item quantity="other">%d個筆記</item>
+    </plurals>
+    <string name="text_one_shot">一次</string>
+    <string name="text_every_day">每天</string>
+    <string name="text_day_concat">，</string>
+    <string name="text_from">從</string>
+    <string name="text_to">到</string>
+    <string name="text_at">在</string>
+    <string name="text_until">知道</string>
+    <string name="text_export">匯出</string>
+    <string name="text_export_text">匯出文字</string>
+    <string name="text_error">錯誤</string>
+    <string name="text_get_it">知道了</string>
+    <string name="text_undone">未完成</string>
+    <string name="text_configuration">自定義</string>
+    <string name="text_syncing">正在同步&#8230;</string>
+    <string name="text_please_wait">請等待&#8230;</string>
+
+    <!-- drawer menus -->
+    <string name="drawer_menu_notebooks">筆記本</string>
+    <string name="drawer_menu_categories">分類</string>
+    <string name="drawer_menu_trash">垃圾箱</string>
+    <string name="drawer_menu_archive">歸檔</string>
+    <string name="drawer_menu_statistics">資料統計</string>
+    <string name="drawer_menu_time_line">時間線</string>
+    <string name="drawer_menu_setting">設定</string>
+    <string name="drawer_menu_share">分享App</string>
+    <string name="drawer_menu_donate">支持開發</string>
+    <string name="drawer_menu_work_to_do">待处理</string>
+    <string name="drawer_menu_work_finish">已处理</string>
+    <string name="drawer_header_sub_title">記錄美好生活</string>
+    <!-- shortcuts -->
+    <string name="shortcut_add_long_name">創建筆記</string>
+    <string name="shortcut_add_short_name">創建</string>
+    <string name="shortcut_search_long_name">蒐索筆記</string>
+    <string name="shortcut_search_short_name">蒐索</string>
+    <string name="shortcut_quick_long_name">快速創建筆記</string>
+    <string name="shortcut_quick_short_name">快記</string>
+    <string name="shortcut_capture_long_name">拍照</string>
+    <string name="shortcut_capture_short_name">拍照</string>
+    <!-- permissions -->
+    <string name="permission_storage_permission">存儲空間</string>
+    <string name="permission_location_permission">位置資訊</string>
+    <string name="permission_microphone_permission">麥克風</string>
+    <string name="permission_phone_permission">電話</string>
+    <string name="permission_sms_permission">簡訊</string>
+    <string name="permission_sensor_permission">感測器</string>
+    <string name="permission_contacts_permission">通訊錄</string>
+    <string name="permission_camera_permission">相機</string>
+    <string name="permission_calendar_permission">行事曆</string>
+    <string name="permission_set_permission">設定許可權</string>
+    <string name="permission_denied_message">沒有許可權，請授予%s許可權之後再次嘗試。</string>
+    <string name="permission_set_in_settings_message">打開設定的程式資訊頁面，輕觸\"許可權\"，將%s設定為打開，並再次嘗試.</string>
+    <string name="permission_to_set">去設定</string>
+    <!-- fabs -->
+    <string name="fab_opt_note">筆記</string>
+    <string name="fab_opt_notebook">筆記本</string>
+    <string name="fab_opt_tags">分類</string>
+    <string name="fab_opt_capture">拍照</string>
+    <string name="fab_opt_image">圖片</string>
+    <string name="fab_opt_draft">手寫</string>
+    <string name="fab_quick_note">快速筆記</string>
+    <string name="fab_sort_custom_fab">自定義浮動按鈕</string>
+    <string name="fab_sort_custom">自定義&#8230;</string>
+    <string name="fab_sort_custom_fab_tip">拖動尾部的按鈕進行排序，排在前面的5個將會展示到主介面</string>
+    <string name="fab_sort_save">保存</string>
+
+    <!-- support -->
+    <string name="dialog_notice_content_part1">您好，感謝您使用馬克筆記!<![CDATA[<br/>]]>這裡我們邀請您與我們一起來提升它的效能：</string>
+    <string name="dialog_notice_content_part2">1、你可以通過將馬克筆記<![CDATA[<b>翻譯成其他語言</b>]]>或者在應用商店<![CDATA[<b>給我們一個好評</b>]]>來幫助我們；</string>
+    <string name="dialog_notice_content_part3">2、如果你發現了异常崩潰、有功能需求等，你可以在<![CDATA[<b>設定->迴響</b>]]>頁面向我們進行迴響；</string>
+    <string name="dialog_notice_content_part4">3、馬克筆記是一款開源應用，你可以在<![CDATA[<b> Github </b>]]>上面找到它的源碼，如果您能給該項目貢獻程式碼或者<![CDATA[<b> Star </b>]]>一下，我們將感激不盡；</string>
+    <string name="dialog_notice_content_part5">4、此外，您可以訂閱或者關注我們的<![CDATA[<b>推特和微博</b>]]>或者加入我們的<![CDATA[<b> QQ群</b>]]>以及時獲取軟件的發佈資訊；</string>
+    <string name="dialog_notice_content_part6">最後，您可以通過下麵兩種方式來資助開發者渡過互聯網的冬天：</string>
+    <!-- statistic -->
+    <string name="statistic_activities">筆記</string>
+    <string name="statistic_title_activities">最近7天添加的筆記</string>
+    <string name="statistic_models_added">資料模型</string>
+    <string name="statistic_title_models_added">添加的資料模型的統計資訊</string>
+    <string name="statistic_attachments_added">附件</string>
+    <string name="statistic_title_attachments_added">添加的附件的統計資訊</string>
+    <!-- timeline -->
+    <string name="timeline_no_more_data">沒有更多數據了&#8230;</string>
+    <string name="timeline_list_empty_title">你的時間線上還沒有活動</string>
+    <string name="timeline_list_empty_subtitle">你在應用中的主要活動將會被展示在這裡</string>
+
+    <!-- note -->
+    <string name="note_add_attachment">添加附件</string>
+    <string name="note_change_notebook">更改筆記本</string>
+    <string name="note_change_categories">更改分類</string>
+    <string name="note_send">發送到其他應用</string>
+    <string name="note_settings">筆記設定</string>
+    <string name="note_hint_content">在這裡輸入你的筆記內容&#8230;</string>
+    <string name="note_copied_success">複製成功</string>
+    <string name="note_search_no_result">沒有發現結果</string>
+    <string name="note_search_sub_title">沒有找到結果？更換搜索條件並再次嘗試</string>
+    <string name="note_view_note_information">筆記資訊</string>
+    <string name="note_captured_image">筆記截圖</string>
+    <string name="note_move_to">移動到</string>
+    <string name="note_shortcut_error_tips">失敗了：筆記沒有保存或者筆記的標題為空</string>
+    <string name="notebook_editor_name_hint">筆記本名稱</string>
+    <string name="notebook_editor_tips">使用筆記本來管理你的筆記</string>
+    <string name="notebook_color_picker_title">選擇筆記本的顏色</string>
+    <string name="notebook_default_selection">全部筆記</string>
+    <string name="notebook_delete_warning">警告：這將同時删除該筆記本關聯的所有筆記!</string>
+    <string name="notebook_picker_title">選擇筆記本</string>
+    <string name="notebook_picker_empty_message">沒有可用的筆記本</string>
+    <string name="notes_list_category_toolbar_title">分類</string>
+    <string name="notes_list_notebook_toolbar_title">筆記本</string>
+    <string name="notes_list_empty">筆記清單為空</string>
+    <string name="notes_list_empty_sub_normal">你可以通過點擊主介面的+按鈕來創建一條筆記</string>
+    <string name="notes_list_empty_sub_archived">沒有發現歸檔的筆記</string>
+    <string name="notes_list_empty_sub_trashed">沒有在垃圾箱中發現筆記</string>
+    <string name="category_picker_title">選擇分類</string>
+    <string name="category_picker_empty_message">沒有找到可以使用的分類</string>
+    <string name="portrait_picker_title">選擇圖標</string>
+    <string name="category_name_hint">分類名稱</string>
+    <string name="category_color_picker_title">分類顏色</string>
+    <string name="category_list_empty_message">你還沒有添加過任何分類</string>
+    <string name="category_list_empty_subtitle">點擊主介面的+按鈕來創建第一個分類</string>
+    <string name="category_list_empty_for_archived">沒有發現歸檔的筆記</string>
+    <string name="category_list_empty_for_trashed">該垃圾箱中沒有發現筆記</string>
+    <string name="category_edit_step_1">1.選擇一個圖標</string>
+    <string name="category_edit_step_2">2.編輯分類的名稱和顏色</string>
+    <string name="note_table_insert">插入表格</string>
+    <string name="note_table_rows_number">行</string>
+    <string name="note_table_cols_number">列</string>
+    <string name="note_table_rows_required">行數不能為空</string>
+    <string name="note_table_cols_required">列數不能為空</string>
+    <string name="note_action_view_message">發現你打開了一個外部檔案，請選擇一種打開管道：</string>
+    <string name="note_action_view_create_note">創建新筆記</string>
+    <string name="note_action_view_file_type_not_support">不支持該檔案類型</string>
+
+    <!-- attachment -->
+    <string name="attachment_type_files">檔案</string>
+    <string name="attachment_type_images">圖片</string>
+    <string name="attachment_type_videos">視頻</string>
+    <string name="attachment_type_voice">音訊</string>
+    <string name="attachment_type_sketches">手寫</string>
+    <string name="attachment_pick_from_album">從相册中選擇</string>
+    <string name="attachment_pick_a_file">選擇檔案</string>
+    <string name="attachment_take_a_photo">拍照</string>
+    <string name="attachment_sound_record">錄音</string>
+    <string name="attachment_take_a_video">拍視頻</string>
+    <string name="attachment_add_sketch">手寫</string>
+    <string name="attachment_open_with">用&#8230;打開</string>
+    <string name="attachment_play_record_failed">播放音訊的時候出現錯誤</string>
+    <string name="sketch_clear_tips">是否清除繪製內容？</string>
+    <string name="sketch_stroke">寬度</string>
+    <string name="sketch_opacity">透明度</string>
+    <string name="sketch_saturation">飽和度</string>
+    <string name="attachment_open_as">作為&#8230;打開</string>
+    <string name="attachment_type_text">文字</string>
+    <string name="attachment_type_audio">音訊</string>
+    <string name="attachment_type_video">視頻</string>
+    <string name="attachment_type_image">圖片</string>
+    <string name="attachment_type_others">其他</string>
+    <string name="attachment_error_gif">長寬不小於%1$dpx，且大小不超過%2$sM。</string>
+
+    <!-- enum names -->
+    <string name="model_name_none">None</string>
+    <string name="model_name_note">筆記</string>
+    <string name="model_name_notebook">筆記本</string>
+    <string name="model_name_alarm">鬧鐘</string>
+    <string name="model_name_attachment">附件</string>
+    <string name="model_name_location">位置</string>
+    <string name="model_name_quick_note">快速筆記</string>
+    <string name="model_name_timeline">時間線</string>
+    <string name="model_name_weather">天氣</string>
+    <string name="model_name_category">分類</string>
+    <string name="operation_none">None</string>
+    <string name="operation_added">添加了</string>
+    <string name="operation_modified">修改了</string>
+    <string name="operation_deleted">删除了</string>
+    <string name="operation_completed">完成了</string>
+    <string name="operation_trashed">删除了</string>
+    <string name="operation_recover">恢復了</string>
+    <string name="operation_archived">歸檔了</string>
+    <string name="operation_synced">同步了</string>
+    <string name="operation_uncompleted">設定未完成</string>
+
+    <!-- setting -->
+    <string name="setting_title">設定</string>
+    <string name="setting_category_personal">個性化</string>
+    <string name="setting_category_personal_theme">主題</string>
+    <string name="setting_category_personal_theme_sub">更改應用的主題顏色</string>
+    <string name="setting_category_personal_beautify_date">美化日期</string>
+    <string name="setting_category_personal_beautify_date_sub">使用簡化的日期</string>
+    <string name="setting_category_personal_fab">浮動按鈕</string>
+    <string name="setting_category_personal_fab_sub">自定義主介面浮動按鈕的的選項</string>
+    <string name="setting_category_personal_navbar">彩色巡覽列</string>
+    <string name="setting_category_personal_navbar_sub">在應用中使用彩色的巡覽列</string>
+    <string name="setting_category_universal">通用</string>
+    <string name="setting_category_universal_note">筆記</string>
+    <string name="setting_category_universal_note_sub">筆記相關的設定</string>
+    <string name="setting_category_universal_backup">備份</string>
+    <string name="setting_category_universal_backup_sub">導入匯出和資料同步</string>
+    <string name="setting_category_universal_security">安全</string>
+    <string name="setting_category_universal_security_sub">添加應用獨立鎖</string>
+    <string name="setting_category_help">幫助</string>
+    <string name="setting_category_help_user_guide">用戶導引</string>
+    <string name="setting_category_help_user_guide_sub">獲取線上的用戶幫助手冊</string>
+    <string name="setting_category_help_feedback">迴響</string>
+    <string name="setting_category_help_feedback_sub">幫助開發者使該應用變得更好</string>
+    <string name="setting_category_help_translate">Translate</string>
+    <string name="setting_category_help_translate_sub">If you want to translate or improve your language，please contact me: shouheng2015@gmail.com</string>
+    <string name="setting_category_others">其他</string>
+    <string name="setting_category_others_about_app">關於應用</string>
+    <string name="setting_category_others_about_app_sub">瞭解我們開發這款應用的初衷和應用的詳細資訊</string>
+    <string name="setting_category_others_about_privacy">隱私政策</string>
+    <string name="setting_category_others_about_open_source">開源許可</string>
+    <!-- setting->theme -->
+    <string name="setting_theme_picker_title">選擇主題</string>
+    <string name="setting_theme_light_blue">蔚藍</string>
+    <string name="setting_theme_light_red">櫻花</string>
+    <string name="setting_theme_dark_blue">黎明</string>
+    <!-- setting->note -->
+    <string name="setting_note_file_extension">筆記拓展名</string>
+    <string name="setting_note_file_extension_sub">創建筆記檔案的時候將會使用指定的檔案拓展名</string>
+    <string name="setting_note_list_type">使用展開的筆記清單視圖</string>
+    <string name="setting_note_list_type_sub">打開之後將會使用展開的清單視圖，否則使用縮略圖</string>
+    <!-- setting->security -->
+    <string name="setting_security_psd_enable">啟用密碼</string>
+    <string name="setting_security_psd_enable_sub">將會在打開應用的時候進行密碼校驗</string>
+    <string name="setting_security_psd">設置密碼</string>
+    <string name="setting_security_psd_sub">設定打開應用時使用的密碼</string>
+    <string name="setting_security_question">密保問題</string>
+    <string name="setting_security_question_sub">當您忘記密碼的時候可以使用密保清除密碼</string>
+    <!-- setting->security->lock -->
+    <string name="setting_lock_psd_hint">再次輸入</string>
+    <string name="setting_lock_psd_changes_left">密碼錯誤</string>
+    <string name="setting_lock_new_psd">新密碼</string>
+    <string name="setting_lock_psd_set_differ">兩次輸入的密碼不一致，請重新輸入</string>
+    <string name="setting_lock_security_question_wrong">答案錯誤</string>
+    <string name="setting_lock_security_question_removed">你已經通過了密保問題校驗，密碼校驗已關閉，你可以在設定中打開並修改密碼</string>
+    <!-- setting->security->security question -->
+    <string name="setting_security_question_tips">請確保設定了密保問題，以防止你忘記密碼</string>
+    <string name="text_security_question">問題</string>
+    <string name="setting_security_question_answer">答案</string>
+    <string name="setting_security_question_confirm_answer">再次輸入</string>
+    <string name="setting_security_question_answer_differ">兩次輸入的答案不一致</string>
+    <string name="setting_security_question_required">請輸入密保問題</string>
+    <string name="setting_security_question_answer_required">請輸入答案</string>
+    <string name="setting_security_question_confirm_answer_required">請再次輸入答案</string>
+    <string name="setting_security_password_finger_print">啟用指紋密碼</string>
+    <string name="setting_security_password_finger_print_sub">啟用之後可以使用指紋進行身份校驗</string>
+    <string name="security_finger_locked">指紋密碼已鎖定</string>
+    <string name="security_finger_failed">指紋識別失敗</string>
+    <string name="security_finger_not_match">紋識不匹配，還剩%d次機會</string>
+    <!-- setting->backup -->
+    <string name="setting_backup_external">外部存儲空間</string>
+    <string name="setting_backup_backup">備份應數據</string>
+    <string name="setting_backup_backup_sub">備份到外部存儲空間的數據不會在應用卸載的時候被删除</string>
+    <string name="setting_backup_import">導入備份</string>
+    <string name="setting_backup_import_sub">從外部存儲空間導入備份</string>
+    <string name="setting_backup_delete">删除備份</string>
+    <string name="setting_backup_delete_sub">删除備份在外部存儲空間的數據</string>
+    <string name="setting_backup_onedrive">OneDrive</string>
+    <string name="setting_backup_onedrive_sign">連接 OneDrive</string>
+    <string name="setting_backup_onedrive_sign_sub">登入 OneDrive 以同步</string>
+    <string name="setting_backup_onedrive_sign_out">退出 OneDrive</string>
+    <string name="setting_backup_onedrive_sign_out_sub">退出 OneDrive 並停止資料同步</string>
+    <string name="setting_backup_settings">同步設定</string>
+    <string name="setting_backup_settings_wifi">只在Wi-Fi環境同步</string>
+    <string name="setting_backup_settings_wifi_sub">只允許在Wi-Fi環境中進行資料同步</string>
+    <string name="setting_backup_settings_interval">同步時間間隔</string>
+    <!-- setting->backup->external -->
+    <string name="setting_backup_text_setting_included">包含設定</string>
+    <string name="setting_backup_external_name">輸入備份名稱</string>
+    <string name="setting_backup_external_include">包含設定（包含密碼）</string>
+    <string name="setting_backup_external_empty">沒有可用的備份</string>
+    <string name="setting_backup_external_import">導入備份</string>
+    <string name="setting_backup_external_import_warn">警告：這將會覆蓋應用數據!</string>
+    <string name="setting_backup_external_backup_completed">備份完成</string>
+    <string name="setting_backup_external_import_tips">確認從備份中進行恢復</string>
+    <string name="setting_backup_external_import_completed">數據導入完成</string>
+    <string name="setting_backup_external_import_content">點擊更新應用</string>
+    <string name="setting_backup_external_delete_confirm">確認删除備份</string>
+    <string name="setting_backup_external_delete_completed">備份已經刪除</string>
+    <!-- setting->backup->cloud -->
+    <string name="setting_backup_onedrive_backup_folder">當前的同步檔案路徑是：%1$s</string>
+    <string name="setting_backup_onedrive_failed_query_sync_cloud">發生未知錯誤!</string>
+    <string name="setting_backup_onedrive_text_folder_explore">選擇資料夾</string>
+    <string name="setting_backup_onedrive_no_more_folders">沒有更多資料夾了</string>
+    <string name="setting_backup_onedrive_error_when_try_to_backup">當往%1$s同步的時候發生了錯誤</string>
+    <string name="setting_backup_onedrive_backup_dir_selected_message">得到了同步的檔案路徑</string>
+    <string name="setting_backup_onedrive_pick_backup_directory_message">進入你希望同步到的資料夾中，並點擊\"完成\"以完成選擇</string>
+    <string name="setting_backup_onedrive_available_directory_found">沒有在當前的資料夾中找到名稱為\"NotePal\"的資料夾，你可以點擊\"完成\"將當前資料夾設定為同步路徑</string>
+    <string name="setting_backup_onedrive_login_drive_message">請先登錄OneDrive然後再同步</string>
+    <string name="setting_backup_onedrive_sync_path_changed_message">系統發現你重新設定了同步路徑，系統將清除備份狀態。之後您需要重新對數據進行備份</string>
+    <string name="setting_backup_interval_sync_every_15_minutes">每隔15分鐘</string>
+    <string name="setting_backup_interval_sync_every_30_minutes">每隔30分鐘</string>
+    <string name="setting_backup_interval_sync_every_hour">每小時</string>
+    <string name="setting_backup_interval_sync_every_2_hours">每隔2小時</string>
+    <string name="setting_backup_interval_sync_every_6_hours">每隔6小時</string>
+    <string name="setting_backup_interval_sync_every_12_hours">每隔12小時</string>
+    <string name="setting_backup_interval_sync_every_day">每天</string>
+    <!-- setting->about -->
+    <string name="about_slogan">快速、質感、功能豐富</string>
+    <string name="about_section_description">馬克筆記</string>
+    <string name="about_section_description_details"><![CDATA[您好，感謝您使用馬克筆記!<br/><br/>馬克筆記是一個快速、質感、功能豐富的<b>Markdown</b>筆記應用。它將在您書寫的過程中給您帶來非常愉悅的體驗。<br/><br/>
+    我們開發這款應用的目的在於幫助每個人記錄自己的生活，所以我們將該軟件進行了開源。你可以在<b>Github</b>上面找到該項目的源碼。如果您能給該項目貢獻程式碼或者<b>Star</b>該項目，那麼我將感激不盡。<br/><br/>
+    此外，如果您對該軟件的功能存在不滿的地方，或者希望增强它的某個功能，您可以通過 shouheng2015@gmail.com 與我進行交流。<br/><br/>
+    請享用!]]></string>
+    <string name="about_section_developer">開發者</string>
+    <string name="about_section_developer_desc">設計 &amp; 開發</string>
+    <string name="about_section_open_sources">開源協定</string>
+    <string name="about_section_open_links">連接</string>
+    <string name="about_section_open_links_details"><![CDATA[
+    1.源碼地址：<br/><a href=\"%s\">Shouheng88/MarkNote: An open sourced makrdown note-taking application for Android</a>；<br/><br/>
+    2.更新日誌：<a href=\"%s\">查看馬克筆記的更新日誌</a>；<br/><br/>
+    3.更新計畫：<a href=\"%s\">及時瞭解我們在接下來的版本中將要開發的功能</a>；<br/><br/>
+    4.關於頁面：<a href=\"%s\">瞭解更多的關於該軟件的內容</a>。]]></string>
+
+    <!--donate -->
+    <string name="donate_wechat_title">捐贈·微信</string>
+    <string name="donate_wechat_tips">微信掃一掃，或者點擊\"去捐贈\"，在微信頁面右上角選單中\"從相册中選取二維碼\"。</string>
+    <string name="donate_alipay_title">捐贈·支付寶</string>
+    <string name="donate_alipay_tips">支付寶掃一掃，或者點擊\"去捐贈\"\n您點滴支持，是我們最大動力</string>
+    <string name="donate_wechat_loading">啟動&#8230;</string>
+    <string name="donate_switch_tips">點擊任何地方切換捐贈管道</string>
+    <string name="donate_text_donate">捐贈</string>
+    <string name="donate_text_to_donate">去捐贈</string>
+    <string name="donate_qa_code">捐贈二維碼</string>
+    <string name="donate_by_alipay">通過支付寶捐贈</string>
+    <string name="donate_by_wechat">通過微信支付捐贈</string>
+
+    <!-- share -->
+    <string name="share_title">應用分享</string>
+    <string name="share_content">嗨！我發現了一個非常好用的Markdown筆記應用，推薦你也使用一下 %s</string>
+</resources>

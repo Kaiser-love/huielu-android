@@ -1,0 +1,199 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'AndResGuard'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "me.shouheng.notepal"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 10
+        versionName "2.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // place holder
+        manifestPlaceholders = [
+                UMENG_CHANNEL_VALUE: "umeng",
+                UMENG_APPKEY       : "${umengAppKey}",
+                FABRIC_APPKEY      : "${fabricAppKey}",
+        ]
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias "${_keyAlias}"
+            storeFile file("${_storeFile}")
+            storePassword "${_storePassword}"
+            keyPassword "${_keyPassword}"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true // enable shrink resources
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        applicationVariants.all { variant ->
+            variant.outputs.all { output ->
+                outputFileName = defaultConfig.applicationId + "-" + variant.baseName + "-" + defaultConfig.versionName + "-" + defaultConfig.versionCode + ".apk";
+            }
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        incremental = true  //开启增量编译
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+    // ref: https://youtrack.jetbrains.com/issue/KT-4779 & https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-default/index.html
+    // ref: https://stackoverflow.com/questions/44141076/compilekotlin-block-in-build-gradle-file-throws-error-could-not-find-method-com
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = '1.8'
+            freeCompilerArgs = ["-Xenable-jvm-default", "-Xjvm-default=enable"]
+            // enable-jvm-default is only for avoid IDE warning
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    flavorDimensions "default"
+    productFlavors {
+        dev {
+            dimension "default"
+        }
+        alpha {
+            dimension "default"
+        }
+        beta {
+            dimension "default"
+        }
+        prod {
+            dimension "default"
+        }
+        google {
+            dimension "default"
+        }
+        coolapk {
+            dimension "default"
+        }
+    }
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+    // AndResGuard
+    andResGuard {
+        mappingFile = null
+        // Do NOT enable 7zip compression(use7zip) when you distribute your APP on Google Play: https://github.com/shwenzhang/AndResGuard/issues/233
+        use7zip = true
+        useSign = true
+        keepRoot = false
+
+        whiteList = [
+                // for fabric
+                "R.string.com.crashlytics.*",
+                // for google-services
+                "R.string.google_app_id",
+                "R.string.gcm_defaultSenderId",
+                "R.string.default_web_client_id",
+                "R.string.ga_trackingId",
+                "R.string.firebase_database_url",
+                "R.string.google_api_key",
+                "R.string.google_crash_reporting_api_key"
+        ]
+        compressFilePattern = [
+                "*.png",
+                "*.jpg",
+                "*.jpeg",
+                "*.gif",
+        ]
+        sevenzip {
+            artifact = 'com.tencent.mm:SevenZip:1.2.13'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    implementation('com.jakewharton:butterknife:8.5.1') {
+        exclude group: 'com.android.support'
+    }
+    // 引导页
+    implementation 'com.github.paolorotolo:appintro:1.3.0'
+    // Dragger
+    implementation "com.google.dagger:dagger:2.11-rc2"
+    annotationProcessor "com.google.dagger:dagger-compiler:2.11-rc2"
+    // 使用Palette调色后。Toolbar、TabLayout状态栏等会根据图片展示比较搭配的颜色
+    implementation 'com.android.support:palette-v7:28.0.0'
+    // Rx Java
+    implementation "io.reactivex:rxandroid:1.2.0"
+    implementation "io.reactivex:rxjava:1.1.5"
+    // SQLite数据库访问
+    implementation 'org.litepal.android:java:3.0.0'
+    // lombok
+    implementation 'org.projectlombok:lombok:1.16.8'  //添加lombok依赖
+    implementation 'org.glassfish:javax.annotation:10.0-b28' //java注解
+    // 预览图片
+    implementation 'com.ycjiang:ImagePreview:2.2.2'
+    // 权限切面
+    implementation 'org.aspectj:aspectjrt:1.8.9'
+    implementation "com.android.support:support-v13:28.0.0"
+    // 音频录制
+    implementation 'com.github.zhaolewei:ZlwAudioRecorder:1.0.6'
+    // 侧滑菜单
+    implementation 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
+    // adapter适配
+    implementation 'com.github.mcxtzhang:all-base-adapter:V1.5.2'
+    // ion上传
+    implementation 'com.koushikdutta.ion:ion:2.2.1'
+    // 对话框
+    implementation 'com.kongzue.dialog:dialog:2.5.2'
+    // okhttp
+    implementation 'com.squareup.okhttp3:okhttp:4.0.0-alpha02'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.0.0-alpha02'
+    // StringUtils
+    implementation 'commons-lang:commons-lang:2.6'
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
+    // JSON解析
+    implementation 'com.alibaba:fastjson:1.2.58'
+    //下载框架
+    implementation 'com.liulishuo.okdownload:okdownload:1.0.5'
+    implementation 'com.liulishuo.okdownload:sqlite:1.0.5'
+    implementation 'com.liulishuo.okdownload:okhttp:1.0.5'
+    // 通用工具
+    implementation "org.jetbrains.anko:anko-commons:0.10.8"
+    // RxBinding
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.2.0'
+    // QMUI
+    implementation 'com.qmuiteam:qmui:1.1.3'
+    implementation project(path: ':commons')
+    implementation project(path: ':data')
+    implementation project(path: ':pinlockview')
+    implementation project(path: ':fingerprint')
+    implementation project(path: ':camera')
+    implementation project(path: ':library')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+}

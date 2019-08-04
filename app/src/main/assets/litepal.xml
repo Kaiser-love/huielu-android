@@ -1,0 +1,9 @@
+<litepal>
+    <dbname value="photo_work" />
+    <version value="1" />
+    <list>
+        <mapping class="me.shouheng.notepal.data.entity.WorkFinish" />
+        <mapping class="me.shouheng.notepal.data.entity.WorkToDo" />
+    </list>
+    <storage value="external" />
+</litepal>

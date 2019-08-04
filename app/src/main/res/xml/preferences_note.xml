@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:title="@string/setting_note_file_extension"
+        android:key="@string/key_note_file_extension"
+        android:entries="@array/note_file_extensions"
+        android:entryValues="@array/note_file_extensions"
+        android:defaultValue="md"
+        android:summary="@string/setting_note_file_extension_sub"/>
+
+    <SwitchPreference
+        android:key="@string/key_note_expanded_note"
+        android:defaultValue="true"
+        android:title="@string/setting_note_list_type"
+        android:summary="@string/setting_note_list_type_sub"/>
+
+</PreferenceScreen>

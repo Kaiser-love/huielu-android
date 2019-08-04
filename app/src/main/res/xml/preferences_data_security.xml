@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="@string/key_security_psd_required"
+        android:defaultValue="false"
+        android:title="@string/setting_security_psd_enable"
+        android:summary="@string/setting_security_psd_enable_sub"/>
+
+    <Preference
+        android:key="@string/key_security_psd"
+        android:persistent="false"
+        android:title="@string/setting_security_psd"
+        android:summary="@string/setting_security_psd_sub"/>
+
+    <Preference
+        android:key="@string/key_security_psd_question"
+        android:persistent="false"
+        android:title="@string/setting_security_question"
+        android:summary="@string/setting_security_question_sub"/>
+
+    <SwitchPreference
+        android:key="@string/key_security_finger_print_enable"
+        android:defaultValue="false"
+        android:icon="@drawable/ic_fingerprint_black_24dp"
+        android:title="@string/setting_security_password_finger_print"
+        android:summary="@string/setting_security_password_finger_print_sub"/>
+
+</PreferenceScreen>

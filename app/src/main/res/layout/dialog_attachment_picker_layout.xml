@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            style="@style/OptionListItem"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:drawableLeft="@drawable/ic_photo_library_grey_24dp"
+            android:text="@string/attachment_pick_from_album"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/tv_album" />
+
+        <TextView
+            style="@style/OptionListItem"
+            android:drawableLeft="@drawable/ic_insert_drive_file_grey_24dp"
+            android:text="@string/attachment_pick_a_file"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/tv_file" />
+
+        <TextView
+            style="@style/OptionListItem"
+            android:id="@+id/tv_take_photo"
+            android:drawableLeft="@drawable/ic_add_a_photo_grey_24dp"
+            android:text="@string/attachment_take_a_photo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+        <TextView
+            style="@style/OptionListItem"
+            android:drawableLeft="@drawable/ic_mic_grey_24dp"
+            android:text="@string/attachment_sound_record"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/tv_record_sound" />
+
+        <TextView
+            style="@style/OptionListItem"
+            android:drawableLeft="@drawable/ic_videocam_grey_24dp"
+            android:text="@string/attachment_take_a_video"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/tv_take_video" />
+
+        <TextView
+            style="@style/OptionListItem"
+            android:drawableLeft="@drawable/ic_gesture_grey_24dp"
+            android:text="@string/attachment_add_sketch"
+            android:layout_height="45dp"
+            android:layout_width="match_parent"
+            android:id="@+id/tv_sketch" />
+
+    </LinearLayout>
+
+</layout>

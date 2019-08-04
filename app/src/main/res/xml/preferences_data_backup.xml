@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/setting_backup_external">
+
+        <Preference
+            android:key="@string/key_backup_external"
+            android:persistent="false"
+            android:title="@string/setting_backup_backup"
+            android:summary="@string/setting_backup_backup_sub"/>
+
+        <Preference
+            android:key="@string/key_backup_import"
+            android:persistent="false"
+            android:title="@string/setting_backup_import"
+            android:summary="@string/setting_backup_import_sub" />
+
+        <Preference
+            android:key="@string/key_backup_delete"
+            android:persistent="false"
+            android:title="@string/setting_backup_delete"
+            android:summary="@string/setting_backup_delete_sub" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_backup_onedrive">
+
+        <Preference android:key="@string/key_backup_onedrive_singin"
+            android:persistent="false"
+            android:title="@string/setting_backup_onedrive_sign"
+            android:summary="@string/setting_backup_onedrive_sign_sub"/>
+
+        <Preference android:key="@string/key_backup_onedrvie_signout"
+            android:persistent="false"
+            android:title="@string/setting_backup_onedrive_sign_out"
+            android:summary="@string/setting_backup_onedrive_sign_out_sub"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_backup_settings">
+
+        <Preference
+            android:key="@string/key_backup_time_interval"
+            android:persistent="false"
+            android:title="@string/setting_backup_settings_interval"/>
+
+        <SwitchPreference
+            android:key="@string/key_backup_only_wifi"
+            android:defaultValue="true"
+            android:title="@string/setting_backup_settings_wifi"
+            android:summary="@string/setting_backup_settings_wifi_sub"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

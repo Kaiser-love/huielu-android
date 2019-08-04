@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">mikecrm.com</domain>
+        <domain includeSubdomains="true">m.weibo.cn</domain>
+        <domain includeSubdomains="true">pic31.nipic.com</domain>
+        <domain includeSubdomains="true">47.107.139.6</domain>
+    </domain-config>
+</network-security-config>
